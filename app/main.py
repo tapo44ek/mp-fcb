@@ -10,7 +10,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
-                   "https://up.dsa.mlc.gov/",
+                   "https://up.dsa.mlc.gov",
                    "http://10.9.96.160:5154"],  # или ["*"] для всех
     allow_credentials=True,
     allow_methods=["*"],
